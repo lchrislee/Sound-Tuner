@@ -1,6 +1,6 @@
 {
 	"name": "SoundTuner",
-	"version": "0.0.0.3",
+	"version": "0.0.9",
 	"manifest_version": 2,
 	"description": "An extension that allows you to change the volume of each tab.",
 	"author": "Chris Lee",
