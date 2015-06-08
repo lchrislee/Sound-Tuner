@@ -1,6 +1,6 @@
 {
 	"name": "SoundTuner",
-	"version": "0.0.0.1",
+	"version": "0.0.0.3",
 	"manifest_version": 2,
 	"description": "An extension that allows you to change the volume of each tab.",
 	"author": "Chris Lee",
@@ -20,7 +20,7 @@
 		"default_popup": "popup.html"
 	},
 	
-	"permissions": ["tabs"],
+	"permissions": ["tabs", "<all_urls>"],
 	
 	"background":{
 		"scripts": ["js/background.js"],
@@ -30,7 +30,8 @@
 	"content_scripts": [
 		{
 			"matches": ["http://*/*", "https://*/*"],
-			"js": ["js/content.js"]
+			"js": ["js/content.js"],
+			"run_at": "document_end"
 		}
 	],
 	
