@@ -6,15 +6,15 @@
 	"author": "Chris Lee",
 	
 	"icons":{
-		"16": "image16.png",
-		"48": "image48.png",
-		"128": "image128.png"
+		"16": "img/image16.png",
+		"48": "img/image48.png",
+		"128": "img/image128.png"
 	},
 	
 	"browser_action":{
 		"default_icon":{			
-			"19": "image19.png",
-			"38": "image38.png"
+			"19": "img/image19.png",
+			"38": "img/image38.png"
 		},
 		"default_title": "Tune Sound",
 		"default_popup": "popup.html"
@@ -23,14 +23,14 @@
 	"permissions": ["tabs"],
 	
 	"background":{
-		"scripts": ["background.js"],
+		"scripts": ["js/background.js"],
 		"persistent": false
 	},
 	
 	"content_scripts": [
 		{
 			"matches": ["http://*/*", "https://*/*"],
-			"js": ["content.js"]
+			"js": ["js/content.js"]
 		}
 	],
 	
